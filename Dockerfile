@@ -26,5 +26,5 @@ RUN unzip /tmp/template.zip -d /tmp/template \
     && cp -rvf /tmp/template/* . \
     && rm -rf /tmp/template /tmp/template.zip
 
-EXPOSE 80
+EXPOSE 80 443
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
